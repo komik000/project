@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="p9">text</p>
+        <p id="p10">text</p>
+        <p id="p11">text</p>
+        <p id="p12">text</p>
+        <p id="p13">text</p>
+        <p id="p14">text</p>
+    <script>
+    //problem1   
+            document.write((3*(Math.pow(19,5)-Math.pow(81,2)))/((45/14)+Math.sin(19)+Math.cos(45)));
+
+        
+           function prob2(num1, num2, num3, num4, num5){
+            var i =1;
+            while(i==1){
+                   var ans2 = 1+15+29+43+57; 
+                   i++;
+               }
+               document.getElementById("p10").innerHTML=ans2;
+           }
+           prob2(1,15,29,43,57)
+
+
+           function prob3(name){
+               let cnt = 0;
+            let i = 0;
+            while(i<name.length){
+                if('AoEeUuIiOo'.search(name[i])>-1){
+                    cnt++;
+                
+                }
+                i++;
+            }
+                document.getElementById("p11").innerHTML=cnt;
+           }
+           prob3("DASTAN")
+
+           function prob4(word){
+               if(word.length%2==0){
+                document.getElementById("p12").innerHTML="YES";
+
+               }
+               else
+               document.getElementById("p12").innerHTML="NO";
+
+           }
+           prob4("Dastan")
+
+           function prob5(a,b){
+               var ans = a<<b;
+            document.getElementById("p13").innerHTML=ans;
+
+           }
+           prob5(18,3)
+
+
+           function prob6(a,b){
+               var ans = a>>>b;
+            document.getElementById("p14").innerHTML=ans;
+//in problem 6 we have zero fill rigth shift   firstly we switch to binary type and just solve after
+           }
+           prob6(00011001,0010)
+           
+    </script>
+    </body>
+</html>
